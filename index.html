@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+
+
+<html>
+     <head>
+	     <meta charset="UTF-8"/>
+		 <title>TyreseBot</title>
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  
+	 </head>
+         
+		 <body>
+		      <style>
+			  
+			  
+			  /* WARNING- This code contains a virus! */
+			  
+			  
+			   body{
+			   
+			   
+			        text-align: center;
+			   }
+			   
+			   
+			   #ch{
+			   
+			       font-size: 1px;
+				   
+			   
+			   }
+			   
+			   
+			  
+			     table{
+				 
+				         
+				          background-color: yellow;
+						  border-radius: 20%;
+						  margin-left: auto;
+						  margin-right: auto;
+						 
+				 }
+			  
+			  #eyes{
+			  
+			           background-color: black;
+					   border-radius: 50%;
+					   border: 3px solid black;
+					   
+					   width: 12vw;
+					   height:12vw;
+			  }
+			  
+			  
+			   #eyes2{
+			  
+			           background-color: black;
+					   border-radius: 50%;
+					   border: 3px solid black;
+					   
+					   width: 12vw;
+					   height:12vw;
+			  }
+			  
+			  
+			  .now{
+			  
+			           background-color: green;
+					   border-radius: 50%;
+					   border: 3px solid blue;
+					   
+					   width: 20vw;
+					   height:20vw;
+			  }
+			  
+			  
+			  
+			  #mouth{
+			  
+			           background-color: black;
+					  
+			           
+					   width: 10vw;
+					   height:2vw;
+			  }
+			  
+			  
+			  #wee{
+			  
+			             width: 7vw;
+			  {
+			  
+			  
+			  </style>
+			  
+			  
+			  /////flat/////
+			  
+			  <!--WHY ARE YOU TRYING TO STEAL MY CODE BUDDY!??-->
+			  	 
+		  <h4 style="color: yellow; align: center; ">TyreseBot</h4>
+		     
+			
+			<p id="ch">     </p> 
+		
+			 
+			 		 
+<div class="talk">		
+
+
+<input type="text" id="wee" onclick="changer()" />
+
+
+
+<button onclick=" countw(); javascript:myFunction() ; javascript:myFunction2()">Activate</button>
+
+
+
+<button onclick="changer(); allmove() ">Read</button>
+
+<!-- <div id="output" style="margin-top: 10px;"> 0 words </div> -->
+
+</div>
+	
+	
+	<!--WHY ARE YOU TRYING TO STEAL MY CODE BUDDY!??, make your own-->
+
+
+
+          <button  onclick="document.location.reload()"  >Reset</button>
+
+			 
+	  <!-- document.location.reload()  -->
+			  
+			  <script>
+			 		  
+			  
+			  
+
+onload = function() {
+    if ('speechSynthesis' in window) with(speechSynthesis)
+        	{
+
+        var jv = document.querySelector('.talk');
+        var check = false;
+
+        jv.addEventListener('click', onClickPlay);
+
+        function onClickPlay() {
+            if (!check) {
+                check = true;
+                utterance = new SpeechSynthesisUtterance(document.querySelector('p').textContent);
+                utterance.voice = getVoices()[0];
+                utterance.onend = function() 
+				{
+				
+                check = false;
+						   
+                };
+                jv.className = 'talk';
+                speak(utterance);
+				
+            }
+			
+      	}
+    }
+
+}
+
+
+
+
+function changer() {
+
+  
+  var sports = document.getElementById("wee").value;
+
+  
+  
+  
+   document.getElementById('ch').innerHTML= sports;
+   
+  
+  
+}
+
+
+var numberw = 0;
+
+function countw(){
+
+		  
+
+           var text = document.getElementById("wee").value;
+		   
+		   
+		   for(var i= 0; i<text.length; i++)
+		   {
+		       
+			   
+			   var current = text[i];
+			   if(current ==" ")
+			   {
+			   
+			         numberw +=1;
+			   
+			   }
+			   
+			   
+			   if(current == ',')
+			   {
+				   
+				   document.getElementById("boxman").style.animationDuration = "0.4s";
+			   
+			   }
+			 
+			     
+		  
+		   }
+		 
+          numberw +=1;
+               // document.getElementById("output").innerHTML= numberw + "words";
+			  
+			  
+			  document.getElementById("boxman").style.animationIterationCount = numberw;
+
+
+}
+
+</script>
+			  
+			  
+			  
+			  
+			  /////flat////
+			  
+			  <style>
+			  body{
+
+      background-color: black;
+
+} 
+
+
+.talk{
+
+
+    background-color: yellow;
+    padding: 20px;
+
+}
+
+
+
+button{
+
+		color: white;
+		background-color:black;
+		
+}
+
+
+button:hover{
+
+
+                     background-color: #A9A9A9;
+
+}
+
+
+
+			  </style>
+		 
+		       <table>
+			   
+			       <tr>
+				      <td><p id="eyes" ></p></td>
+					  <td></td>
+					  <td><p id="eyes2" ></p></td>
+				   </tr>
+				   <tr>
+				       <td></td>
+				       <td><p class="box" id="boxman"></p></p></td>
+					   <td></td>
+				   </tr>
+			    
+			   </table>
+			   
+			  
+		
+		
+		
+		//eyes
+				
+
+
+	<!--WARNING-THIS CODE CONTAINS A VIRUS!-->	
+
+
+
+<script>
+
+function myFunction() { 
+    if (document.getElementById("eyes").style.background == "white") {
+    document.getElementById("eyes").style.background = "#000";
+} else{
+    document.getElementById("eyes").style.background = "white";
+}
+}
+
+</script>
+
+
+<style>
+
+
+</style>
+
+
+
+	<!--WARNING-THIS CODE CONTAINS A VIRUS!-->	
+
+
+
+<script>
+
+function myFunction2() { 
+    if (document.getElementById("eyes2").style.background == "white") {
+    document.getElementById("eyes2").style.background = "#000";
+} else{
+    document.getElementById("eyes2").style.background = "white";
+}
+}
+
+</script>
+
+
+<style>
+
+</style>
+
+
+
+
+
+
+
+<style>  
+
+
+.box {
+   width: 10vw;
+   height:2vw;
+  background: black;
+ 
+  position: relative;
+  border-radius: 10% 10% 70% 70%;
+  
+}
+
+.move{
+   -webkit-animation: moveall 0.28s;
+  animation: moveall 0.28s;
+  animation-iteration-count: 2;
+  animation-delay: 0.3s;
+  
+}
+
+
+@keyframes moveall {
+
+
+   0%   {width: 10vw;}
+  25%  { height: 5vw;}
+  
+  
+}
+
+
+</style>
+
+<script>
+
+var  abox = document.getElementsByClassName("box")[0];
+
+
+
+function allmove(){
+   
+
+
+        abox.classList.remove("move-ltr");
+        abox.classList.remove("move-ttb");
+       abox.classList.toggle("move");
+	   
+	   
+	   
+	   
+}
+
+
+</script>
+
+		
+	<!--WARNING-THIS CODE CONTAINS A VIRUS!-->		
+			  
+		 
+		 </body>
+		 
+</html>		 
